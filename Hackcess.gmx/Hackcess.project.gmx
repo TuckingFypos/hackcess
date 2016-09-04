@@ -6,10 +6,12 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites"/>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\background1</background>
+  </backgrounds>
   <paths name="paths"/>
   <rooms name="rooms">
-    <room>rooms\main_Room</room>
+    <room>rooms\Main</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
