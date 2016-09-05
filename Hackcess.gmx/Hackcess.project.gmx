@@ -4,12 +4,33 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sounds name="sound">
+    <sound>sound\sound_disconnect</sound>
+    <sound>sound\sound_static</sound>
+  </sounds>
+  <sprites name="sprites">
+    <sprites name="icons_black">
+      <sprite>sprites\sprite5</sprite>
+      <sprite>sprites\spr_tablet</sprite>
+      <sprite>sprites\spr_phone</sprite>
+      <sprite>sprites\spr_signal</sprite>
+      <sprite>sprites\spr_pointer</sprite>
+      <sprite>sprites\spr_home</sprite>
+    </sprites>
+    <sprites name="icons_GUI">
+      <sprite>sprites\sprite7</sprite>
+    </sprites>
+  </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
   </backgrounds>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\font0</font>
+  </fonts>
+  <objects name="objects">
+    <object>objects\obj_control</object>
+  </objects>
   <rooms name="rooms">
     <room>rooms\Main</room>
   </rooms>
