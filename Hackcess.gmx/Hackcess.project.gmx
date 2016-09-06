@@ -38,6 +38,11 @@
       <sprite>sprites\sprite19</sprite>
       <sprite>sprites\sprite20</sprite>
     </sprites>
+    <sprites name="Control_Sprites">
+      <sprite>sprites\spr_White_Button</sprite>
+      <sprite>sprites\spr_White_A_Button</sprite>
+      <sprite>sprites\spr_White_B_Button</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -58,6 +63,10 @@
       <object>objects\obj_Right_Menu</object>
     </objects>
     <object>objects\obj_BG_GamePlay</object>
+    <object>objects\object8</object>
+    <objects name="Actions View 1">
+      <object>objects\obj_</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\Main</room>
