@@ -19,10 +19,29 @@
     </sprites>
     <sprites name="icons_GUI">
       <sprite>sprites\sprite7</sprite>
+      <sprite>sprites\spr_GUI_Star</sprite>
+    </sprites>
+    <sprites name="menu_GUI">
+      <sprite>sprites\menu_Trans_White</sprite>
+      <sprite>sprites\menu_Trans_Gray</sprite>
+      <sprite>sprites\menu_Trans_Red</sprite>
+      <sprite>sprites\menu_Trans_Red_Dark</sprite>
+      <sprite>sprites\menu_Trans_Blue</sprite>
+      <sprite>sprites\menu_Trans_Blue_Dark</sprite>
+      <sprite>sprites\menu_Trans_Blue2</sprite>
+      <sprite>sprites\menu_Trans_Blue2_Dark</sprite>
+      <sprite>sprites\menu_Trans_Orange</sprite>
+      <sprite>sprites\menu_Trans_Green</sprite>
+      <sprite>sprites\menu_Trans_Green_Dark</sprite>
+    </sprites>
+    <sprites name="background_Sprites">
+      <sprite>sprites\sprite19</sprite>
+      <sprite>sprites\sprite20</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
+    <background>background\background2</background>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
@@ -30,6 +49,15 @@
   </fonts>
   <objects name="objects">
     <object>objects\obj_control</object>
+    <object>objects\obj_test</object>
+    <object>objects\obj_display</object>
+    <objects name="Menu">
+      <object>objects\obj_GUI_Button1</object>
+      <object>objects\obj_GUI_Button2</object>
+      <object>objects\obj_GUI_Button3</object>
+      <object>objects\obj_Right_Menu</object>
+    </objects>
+    <object>objects\obj_BG_GamePlay</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Main</room>
