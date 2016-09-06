@@ -56,7 +56,6 @@ clicked = false;
         <arguments>
           <argument>
             <kind>1</kind>
-<<<<<<< HEAD
             <string>/**
 
 view[0] = main
@@ -70,23 +69,6 @@ view[4] = green
 view_visible[1] = true;
 view_visible[3] = false;
 view_visible[4] = false;
-=======
-            <string>if clicked = false{
-
-view_visible[0] = false;
-view_visible[1] = true;
-view_visible[2] = true;
-view_visible[3] = true;
-
-clicked = true
-}
-
-else {
-    view_visible[3] = false;
-    view_visible[0] = true;
-    clicked = false;
-}
->>>>>>> origin/master
 </string>
           </argument>
         </arguments>
@@ -114,41 +96,6 @@ else {
           </argument>
         </arguments>
       </action>
-<<<<<<< HEAD
-=======
-      <action>
-        <libid>1</libid>
-        <id>542</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sprite_transform</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>2</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>2</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
->>>>>>> origin/master
     </event>
   </events>
   <PhysicsObject>0</PhysicsObject>
