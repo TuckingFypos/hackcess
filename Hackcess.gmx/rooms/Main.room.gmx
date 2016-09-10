@@ -3,14 +3,14 @@
   <caption></caption>
   <width>1080</width>
   <height>2880</height>
-  <vsnap>240</vsnap>
+  <vsnap>120</vsnap>
   <hsnap>90</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>-1</persistent>
   <colour>12632256</colour>
   <showcolour>0</showcolour>
-  <code></code>
+  <code>display_set_gui_maximise()</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>0</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -41,25 +41,38 @@
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="-1" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1080" hview="960" xport="0" yport="0" wport="1080" hport="960" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="-1" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1080" hview="720" xport="0" yport="0" wport="1080" hport="720" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="-1" objName="&lt;undefined&gt;" xview="0" yview="960" wview="540" hview="960" xport="0" yport="960" wport="540" hport="960" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="-1" objName="&lt;undefined&gt;" xview="540" yview="960" wview="540" hview="960" xport="540" yport="960" wport="540" hport="960" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="1920" wview="540" hview="960" xport="0" yport="960" wport="540" hport="960" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="540" yview="1920" wview="540" hview="960" xport="0" yport="960" wport="540" hport="960" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="-1" objName="&lt;undefined&gt;" xview="0" yview="720" wview="1080" hview="240" xport="0" yport="720" wport="1080" hport="240" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_GUI_Button1" x="810" y="1200" name="inst_B6ED4D5F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_GUI_Button2" x="810" y="1440" name="inst_94215285" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_GUI_Button1" x="810" y="1440" name="inst_B6ED4D5F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_GUI_Button2" x="810" y="1560" name="inst_94215285" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_GUI_Button3" x="810" y="1680" name="inst_FA3C8F88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_" x="180" y="1200" name="inst_4F8B64B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_" x="180" y="2160" name="inst_E8136547" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_" x="180" y="2400" name="inst_0142CE50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_" x="810" y="2160" name="inst_3EE50E9A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_" x="810" y="2400" name="inst_7A0CD638" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_" x="810" y="2640" name="inst_2CC58A2C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_control" x="900" y="1800" name="inst_22883995" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Computer_Blue" x="180" y="240" name="inst_4EF5C9F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_GamePlayBG_Black" x="540" y="480" name="inst_9A1675AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_MenuBG_Green" x="810" y="2400" name="inst_5B9AC8A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ActionBG_Red" x="270" y="2400" name="inst_BE7DB4C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obg_ActionBG_White" x="270" y="1440" name="inst_AC9920AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_MenuBG_Grey" x="810" y="1440" name="inst_F14BB2F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Tablet_White" x="540" y="600" name="inst_02A9DE13" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Server_White" x="900" y="240" name="inst_67B89719" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_TextBG_Blue" x="540" y="840" name="inst_DFCC89AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Control_NetworkScan" x="360" y="1680" name="inst_4F2DDCE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Control_PortScan" x="360" y="1440" name="inst_92854876" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Control_KeyLogger" x="360" y="2640" name="inst_CF8033AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Control_RAT" x="360" y="2400" name="inst_16A075B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Control_RootKit" x="360" y="2160" name="inst_E4AA7097" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Control_SocialEngineering" x="900" y="2160" name="inst_BF8C18EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Control_Trojan" x="900" y="2400" name="inst_14ACE45E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Control_SQLInjection" x="900" y="2640" name="inst_997CB2DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Text_Manipulator" x="90" y="960" name="inst_2644C08C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
