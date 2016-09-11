@@ -54,7 +54,6 @@
     <instance objName="obj_GUI_Button1" x="810" y="1440" name="inst_B6ED4D5F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_GUI_Button2" x="810" y="1560" name="inst_94215285" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_GUI_Button3" x="810" y="1680" name="inst_FA3C8F88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_control" x="900" y="1800" name="inst_22883995" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Computer_Blue" x="180" y="240" name="inst_4EF5C9F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_GamePlayBG_Black" x="540" y="480" name="inst_9A1675AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_MenuBG_Green" x="810" y="2400" name="inst_5B9AC8A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -72,7 +71,16 @@
     <instance objName="obj_Control_SocialEngineering" x="900" y="2160" name="inst_BF8C18EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Control_Trojan" x="900" y="2400" name="inst_14ACE45E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Control_SQLInjection" x="900" y="2640" name="inst_997CB2DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Text_Manipulator" x="90" y="960" name="inst_2644C08C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Text_Manipulator" x="90" y="960" name="inst_BA786265" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Execute" x="810" y="1200" name="inst_68355ED3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_NetworkScan_Cooldown" x="180" y="1440" name="inst_9FDA46B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_PortScan_Cooldown" x="180" y="1680" name="inst_EE9BC6DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_RootKit_Cooldown" x="180" y="2160" name="inst_C2CC9643" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_RAT_Cooldown" x="180" y="2400" name="inst_CE6D900C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_KeyLogger_Cooldown" x="180" y="2640" name="inst_2D66BAAD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Trojan_Cooldown" x="720" y="2400" name="inst_C6C910DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_SocialE_Cooldown" x="720" y="2160" name="inst_691A65DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_SQL_Cooldown" x="720" y="2640" name="inst_D644A8E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

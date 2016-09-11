@@ -31,6 +31,7 @@
         <sprite>sprites\spr_Button_Scanner</sprite>
         <sprite>sprites\spr_Button_Tools</sprite>
         <sprite>sprites\spr_Button_Scripts</sprite>
+        <sprite>sprites\spr_Button_Execute</sprite>
       </sprites>
     </sprites>
     <sprites name="background_Sprites">
@@ -60,7 +61,7 @@
       <sprite>sprites\spr_Server</sprite>
     </sprites>
     <sprites name="Animated">
-      <sprite>sprites\sprite36</sprite>
+      <sprite>sprites\spr_Cooldown_Timer</sprite>
     </sprites>
     <sprite>sprites\sprite37</sprite>
   </sprites>
@@ -69,11 +70,13 @@
     <background>background\background2</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_text.gml</script>
+  </scripts>
   <fonts name="fonts">
-    <font>fonts\font0</font>
+    <font>fonts\fnt</font>
   </fonts>
   <objects name="objects">
-    <object>objects\obj_control</object>
     <object>objects\obj_test</object>
     <object>objects\obj_display</object>
     <objects name="Menu">
@@ -81,6 +84,7 @@
       <object>objects\obj_GUI_Button2</object>
       <object>objects\obj_GUI_Button3</object>
       <object>objects\obj_Right_Menu</object>
+      <object>objects\obj_Execute</object>
     </objects>
     <object>objects\obj_BG_GamePlay</object>
     <object>objects\object8</object>
@@ -98,17 +102,33 @@
       <object>objects\obj_TextBG_Blue</object>
     </objects>
     <objects name="Control_Objects">
-      <object>objects\obj_Control_NetworkScan</object>
-      <object>objects\obj_Control_PortScan</object>
-      <object>objects\obj_Control_KeyLogger</object>
-      <object>objects\obj_Control_RAT</object>
-      <object>objects\obj_Control_RootKit</object>
-      <object>objects\obj_Control_SocialEngineering</object>
-      <object>objects\obj_Control_Trojan</object>
-      <object>objects\obj_Control_SQLInjection</object>
+      <objects name="scanner">
+        <object>objects\obj_Control_NetworkScan</object>
+        <object>objects\obj_Control_PortScan</object>
+        <object>objects\obj_NetworkScan_Cooldown</object>
+        <object>objects\obj_PortScan_Cooldown</object>
+      </objects>
+      <objects name="toolbox">
+        <object>objects\obj_Control_RootKit</object>
+        <object>objects\obj_Control_RAT</object>
+        <object>objects\obj_Control_KeyLogger</object>
+        <object>objects\obj_RootKit_Cooldown</object>
+        <object>objects\obj_RAT_Cooldown</object>
+        <object>objects\obj_KeyLogger_Cooldown</object>
+      </objects>
+      <objects name="scripts">
+        <object>objects\obj_Control_Trojan</object>
+        <object>objects\obj_Control_SQLInjection</object>
+        <object>objects\obj_Control_SocialEngineering</object>
+        <object>objects\obj_Trojan_Cooldown</object>
+        <object>objects\obj_SQL_Cooldown</object>
+        <object>objects\obj_SocialE_Cooldown</object>
+      </objects>
     </objects>
     <objects name="Logic">
       <object>objects\obj_Text_Manipulator</object>
+      <object>objects\obj_text</object>
+      <object>objects\obj_tester</object>
     </objects>
   </objects>
   <rooms name="rooms">
