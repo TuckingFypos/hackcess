@@ -92,6 +92,7 @@
       <object>objects\obj_Computer_Blue</object>
       <object>objects\obj_Tablet_White</object>
       <object>objects\obj_Server_White</object>
+      <object>objects\obj_Target_Stats</object>
     </objects>
     <objects name="Background_Objects">
       <object>objects\obj_GamePlayBG_Black</object>
@@ -129,6 +130,8 @@
       <object>objects\obj_Text_Manipulator</object>
       <object>objects\obj_text</object>
       <object>objects\obj_tester</object>
+      <object>objects\obj_Player_Inventory</object>
+      <object>objects\obj_feedback</object>
     </objects>
   </objects>
   <rooms name="rooms">

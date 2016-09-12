@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>obj_feedback</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -34,45 +34,76 @@
     <event eventtype="6" enumb="7">
       <action>
         <libid>1</libid>
-        <id>203</id>
+        <id>408</id>
         <kind>0</kind>
         <userelative>0</userelative>
-        <isquestion>0</isquestion>
+        <isquestion>-1</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_kill_object</functionname>
+        <functionname>action_if</functionname>
         <codestring></codestring>
-        <whoName>obj_Tablet_White</whoName>
+        <whoName>obj_NetworkScan_Cooldown</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>image_index &gt;= 7</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>422</id>
+        <kind>1</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
       </action>
       <action>
         <libid>1</libid>
-        <id>203</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_kill_object</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
-        <whoName>obj_Server_White</whoName>
+        <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>203</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_kill_object</functionname>
-        <codestring></codestring>
-        <whoName>obj_Computer_Blue</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Destroy Untargeted Instances
+
+with (instance_find(obj_Computer_Blue,all)){
+    if image_index &lt; 1{
+        instance_destroy();
+        }
+}
+
+with (instance_find(obj_Tablet_White,all)){
+    if image_index &lt; 1{
+        instance_destroy();
+        }
+}
+
+with (instance_find(obj_Server_White,all)){
+    if image_index &lt; 1{
+        instance_destroy();
+        }
+}
+</string>
+          </argument>
+        </arguments>
       </action>
       <action>
         <libid>1</libid>
@@ -95,17 +126,60 @@
 result = random(20);
 
 if ((result &gt;= 6) &amp;&amp; (result &lt;= 12)){
-instance_create(random_range(60,(view_wview[0]-60)), random_range(60,view_hview[0]-(view_hview[5])), obj_Tablet_White);
+instance_create(random_range((view_wview[0]/12),(view_wview[0]-60)), random_range((view_hview[0]/10),view_hview[0]-(view_hview[5])), obj_Tablet_White);
 };
 if ((result &gt;= 13) &amp;&amp; (result &lt;= 17)){
-instance_create(random_range(60,view_wview[0]-60), random_range(60,view_hview[0]-(view_hview[5])), obj_Computer_Blue);
+instance_create(random_range((view_wview[0]/12),view_wview[0]-60), random_range((view_hview[0]/10),view_hview[0]-(view_hview[5])), obj_Computer_Blue);
 };
 if ((result &gt;= 17) &amp;&amp; (result &lt;= 20)){
-instance_create(random_range(60,view_wview[0]-60), random_range(60,view_hview[0]-(view_hview[5])), obj_Server_White);
+instance_create(random_range((view_wview[0]/12),view_wview[0]-60), random_range((view_hview[0]/10),view_hview[0]-(view_hview[5])), obj_Server_White);
 };
+
 </string>
           </argument>
         </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Trigger scan cooldown
+
+
+with(instance_find(obj_NetworkScan_Cooldown,all)){
+image_index = 0;
+image_speed  = .05;
+
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>424</id>
+        <kind>2</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
     <event eventtype="8" enumb="64">
