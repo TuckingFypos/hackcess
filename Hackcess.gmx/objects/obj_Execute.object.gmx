@@ -26,6 +26,138 @@
           <argument>
             <kind>1</kind>
             <string>//Initialize the button
+image_speed = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Execute Tablet
+with instance_find(obj_Tablet_White, all){
+    if image_index = 2{     
+    with instance_find(obj_Execute,all){
+        if image_index = 1{
+            with (instance_find(obj_Tablet_White,all)){ instance_destroy()};
+            immersion_play_effect(80);
+            with (instance_find(obj_NetworkScan_Cooldown,all)){
+             image_index = 1
+             image_speed = .05
+            }
+        }
+    }
+}
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Execute Server 
+with instance_find(obj_Server_White,all){
+    if image_index = 2{
+        with instance_find(obj_Execute,all){
+            if image_index = 1{
+                with (instance_find(obj_Server_White,all)){ instance_destroy()};
+                immersion_play_effect(80);
+                with (instance_find(obj_NetworkScan_Cooldown,all)){
+                    image_index = 1;
+                    image_speed = .05;
+                }
+            }
+        }
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Execute PC
+with instance_find(obj_Computer_Blue,all){
+    if image_index = 2{
+        with instance_find(obj_Execute,all){
+            if image_index = 1{
+                with (instance_find(obj_Computer_Blue,all)){ instance_destroy()};
+                immersion_play_effect(80);
+                with (instance_find(obj_NetworkScan_Cooldown,all)){
+                    image_index = 1
+                    image_speed = .05
+                }
+            }
+        }
+    }
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Reset Execution
+image_index = 0;
 </string>
           </argument>
         </arguments>

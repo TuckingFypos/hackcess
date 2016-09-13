@@ -41,6 +41,93 @@
     <event eventtype="6" enumb="4">
       <action>
         <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Haptic Immersion
+immersion_play_effect(25);
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Disable NetworkScan Enable PortScan
+
+if (image_index = 0){
+
+    with (instance_find(obj_NetworkScan_Cooldown,all)){
+        image_speed = 0;
+        image_index = 0;
+    }
+    with (obj_PortScan_Cooldown){
+        image_speed = .05;
+        image_index = 1;
+}
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Enable NetworkScan Disable PortScan
+
+if (image_index = 1) {
+with(instance_find(obj_NetworkScan_Cooldown,all)){
+    image_index = 0;
+    image_speed  = .05;
+}
+with (obj_PortScan_Cooldown){
+        image_speed = 0;
+        image_index = 0;
+}
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>408</id>
         <kind>0</kind>
         <userelative>0</userelative>

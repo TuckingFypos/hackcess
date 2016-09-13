@@ -21,5 +21,6 @@
   <height>150</height>
   <frames>
     <frame index="0">images\spr_Button_Execute_0.png</frame>
+    <frame index="1">images\spr_Button_Execute_1.png</frame>
   </frames>
 </sprite>

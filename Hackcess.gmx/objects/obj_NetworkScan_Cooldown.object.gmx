@@ -49,7 +49,8 @@ image_index=7;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if image_speed &gt; 0
+            <string>///Cycle cooldown once
+if image_speed &gt; 0
    {
    if (image_index &gt; image_number - 1) image_speed=0;
    }
@@ -75,7 +76,8 @@ image_index=7;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (sprite_index &lt;= 7){
+            <string>///End Cooldown Animation
+if (sprite_index &lt;= 7){
 image_speed = 0;
 }
 </string>

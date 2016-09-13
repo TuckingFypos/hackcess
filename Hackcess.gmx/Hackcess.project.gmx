@@ -131,7 +131,6 @@
       <object>objects\obj_text</object>
       <object>objects\obj_tester</object>
       <object>objects\obj_Player_Inventory</object>
-      <object>objects\obj_feedback</object>
     </objects>
   </objects>
   <rooms name="rooms">
